@@ -4,7 +4,6 @@ import numpy as np
 from matplotlib import collections as mc, pyplot as plt
 
 
-# @title NeuralNetwork And Its Topologies Classes
 class CreateNeuralNetwork:
     def __init__(self, shape, initializer, activation, output_activation=None):
         self.shape = shape
