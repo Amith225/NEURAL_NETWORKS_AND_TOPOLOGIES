@@ -4,6 +4,7 @@ import numpy as np
 from matplotlib import collections as mc, pyplot as plt
 
 
+# @title NeuralNetwork And Its Topologies Classes
 class CreateNeuralNetwork:
     def __init__(self, shape, initializer, activation, output_activation=None):
         self.shape = shape
@@ -378,7 +379,7 @@ class CreateDatabase:
 
     def mini_batch(self, batch_size):
         if batch_size < 0:
-            self.batch_size = self.shape[0] + batch_size
+            self.batch_size = self.shape[0]
         else:
             self.batch_size = batch_size
 
