@@ -368,8 +368,8 @@ class Optimizer:
 
 class CreateDatabase:
     def __init__(self, input_data, labels):
-        self.input_data = np.array(input_data, dtype=np.float32).reshape((len(input_data), len(input_data[0]), 1))
-        self.labels = np.array(labels, dtype=np.float32).reshape((len(labels), len(labels[0]), 1))
+        self.input_data = np.array(list(input_data), dtype=np.float32).reshape((len(input_data), len(input_data[0]), 1))
+        self.labels = np.array(list(labels), dtype=np.float32).reshape((len(labels), len(labels[0]), 1))
 
         self.shape = self.input_data.shape
 
